@@ -7,6 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
+import ContactMe from "./components/ContactMe";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <AboutMe />
       <Skills />
       <Works />
+      <ContactMe />
     </div>
   );
 }

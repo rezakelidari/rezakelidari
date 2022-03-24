@@ -1,0 +1,50 @@
+@import "../../styles/transitions";
+
+.contactMain {
+  .items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      @include fade;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.15);
+        filter: drop-shadow(0 0 0.5rem #ffffff55);
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+// Responsive
+@media only screen and (max-width: 768px) {
+  .contactMain {
+    .items {
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}

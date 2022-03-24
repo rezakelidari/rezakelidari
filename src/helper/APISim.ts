@@ -9,6 +9,7 @@ import IconFirebase from "../assets/icons/firebase.svg";
 import IconCode from "../assets/icons/code.svg";
 
 import { IWork } from "../components/Works";
+import { IContact } from "../components/ContactMe";
 
 export const skills: Array<ISkill> = [
   {
@@ -131,5 +132,50 @@ export const works: Array<IWork> = [
     tags: ["React.js", "React hooks"],
     github: "https://github.com/rezakelidari/simple-todo",
     demo: "https://simple-todo-one.vercel.app/",
+  },
+];
+
+export const contact: Array<IContact> = [
+  {
+    title: "Phone Number",
+    icon: "person-fill",
+    info: "+98 993 899 9748",
+    href: "tel:+989938999748",
+  },
+  {
+    title: "Email",
+    icon: "envelope-fill",
+    info: "reza.phoenix.1382@gmail.com",
+    href: "mailto:reza.phoenix.1382@gmail.com",
+  },
+  {
+    title: "Address",
+    icon: "geo-alt-fill",
+    info: "Tehran, Shahriar",
+    href: "https://www.google.com/maps/place/%D8%B4%D9%87%D8%B1%D8%B3%D8%AA%D8%A7%D9%86+%D8%B4%D9%87%D8%B1%DB%8C%D8%A7%D8%B1%D8%8C+%D8%A7%D8%B3%D8%AA%D8%A7%D9%86+%D8%AA%D9%87%D8%B1%D8%A7%D9%86%E2%80%AD/@35.5924677,51.2681909,11z/data=!4m5!3m4!1s0x3f8df18e8d90a243:0x26fc7c9880fd80a1!8m2!3d35.6096201!4d51.0331933",
+  },
+  {
+    title: "Github Profile",
+    icon: "github",
+    info: "@rezakelidari",
+    href: "https://github.com/rezakelidari",
+  },
+  {
+    title: "Instagram",
+    icon: "instagram",
+    info: "@rezakelidari_alone",
+    href: "https://www.instagram.com/rezakelidari_alone",
+  },
+  {
+    title: "Telegram",
+    icon: "telegram",
+    info: "@rezakelidari",
+    href: "https://t.me/rezakelidari",
+  },
+  {
+    title: "LinkedIn",
+    icon: "linkedin",
+    info: "@rezakelidari",
+    href: "https://www.linkedin.com/in/rezakelidari",
   },
 ];
