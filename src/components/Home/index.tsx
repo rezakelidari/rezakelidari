@@ -5,7 +5,7 @@ import "./Home.scss";
 
 export default function Home() {
   return (
-    <div className="homeMain">
+    <div className="homeMain main">
       <div className="social">
         <a
           className="item"

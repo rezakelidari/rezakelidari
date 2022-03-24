@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+@import "../../styles/transitions";
+
+.aboutMain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 750px;
+
+    .item {
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 1.25rem;
+      padding: 0.75rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 275px;
+      @include fade;
+
+      .header {
+        opacity: 0.5;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      &:hover {
+        background: $primary-color;
+        filter: drop-shadow(0 0 5px $primary-color);
+      }
+    }
+  }
+}
+
+// Responsive
+@media only screen and (max-width: 768px) {
+  .aboutMain {
+    .items {
+      gap: 1rem;
+    }
+  }
+}

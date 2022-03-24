@@ -1,4 +1,5 @@
 @import "colors";
+@import "transitions";
 
 *,
 ::before,
@@ -21,4 +22,30 @@ body {
 a {
   color: $text-color;
   text-decoration: none;
+
+  &.textLink {
+    border-bottom: 1px solid #ffffff;
+    padding: 0.2rem 0.2rem 0 0.2rem;
+    margin: -0.2rem -0.2rem 0 -0.2rem;
+    @include fade;
+
+    &:hover {
+      background: rgba(0, 255, 255, 0.25);
+      border-color: transparent;
+      border-radius: 5px;
+      padding: 0.2rem;
+      margin: -0.2rem;
+    }
+  }
+}
+
+.main {
+  padding: 7rem 0;
+
+  .mainHeader {
+    font-size: 3rem;
+    opacity: 0.25;
+    text-transform: uppercase;
+    margin-bottom: 7rem;
+  }
 }

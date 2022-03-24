@@ -1,12 +1,13 @@
 @import "../../styles/colors";
+@import "../../styles/transitions";
 
 .homeMain {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 90vh;
   width: 100%;
-  min-height: 95vh;
 
   .social {
     position: absolute;
@@ -22,7 +23,7 @@
     border-radius: 1rem;
 
     .item {
-      transition: 0.3s ease all;
+      @include fade;
 
       &:hover {
         color: $primary-color;
