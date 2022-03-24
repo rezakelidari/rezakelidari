@@ -1,0 +1,32 @@
+@import "../../styles/colors";
+
+.skillsMain {
+  .slides {
+    cursor: grab;
+
+    .skill {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      gap: 1rem;
+      border-radius: 2rem;
+
+      .icon {
+        height: 100px;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      .desc {
+        text-align: center;
+        color: $text-secondary-color;
+      }
+    }
+  }
+}
