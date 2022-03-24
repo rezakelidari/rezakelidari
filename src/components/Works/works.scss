@@ -1,0 +1,51 @@
+@import "../../styles/transitions";
+
+.worksMain {
+  .slides {
+    cursor: grab;
+
+    .work {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      height: 100%;
+      padding-bottom: 1rem;
+      border-radius: 1rem;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      .tags {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+        margin: 0 0 auto 0;
+        padding: 0.5rem;
+
+        .tag {
+          background: rgba(255, 255, 255, 0.1);
+          padding: 0.25rem;
+          border-radius: 0.25rem;
+          @include fade;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

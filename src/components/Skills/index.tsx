@@ -1,44 +1,17 @@
 import React from "react";
+import { skills } from "../../helper/APISim";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import "./Skills.scss";
 import "@splidejs/splide/dist/css/splide.min.css";
 
-import IconReact from "../../assets/icons/react.svg";
-import IconRedux from "../../assets/icons/redux.svg";
-import IconTypeScript from "../../assets/icons/typescript.svg";
-import IconBootstrap from "../../assets/icons/bootstrap.svg";
-import IconSass from "../../assets/icons/sass.svg";
-import IconAPI from "../../assets/icons/api.svg";
-import IconFirebase from "../../assets/icons/firebase.svg";
-import IconCode from "../../assets/icons/code.svg";
-
-interface ISkill {
+export interface ISkill {
   title: string;
   icon: string;
   desc: string;
 }
 
 export default function Skills() {
-  const skills: Array<ISkill> = [
-    {
-      title: "React.js",
-      icon: IconReact,
-      desc: "React.js, jsx, hooks, Routing & SPA",
-    },
-    { title: "Redux", icon: IconRedux, desc: "Redux, redux-thunk" },
-    { title: "TypeScript", icon: IconTypeScript, desc: "" },
-    {
-      title: "Bootstrap",
-      icon: IconBootstrap,
-      desc: "Bootstrap v5, Bootstrap-Icons",
-    },
-    { title: "Sass", icon: IconSass, desc: ".scss" },
-    { title: "API", icon: IconAPI, desc: "RESTful APIs, axios" },
-    { title: "Firebase", icon: IconFirebase, desc: "Auth, Analytics" },
-    { title: "Html, CSS, JS", icon: IconCode, desc: "HTML5, CSS3, JS(ES6)" },
-  ];
-
   const width: number =
     window.screenX > 0 ? window.screenX : window.screen.availWidth;
 
@@ -54,8 +27,9 @@ export default function Skills() {
           perPage:
             width > 1280 ? 5 : width > 960 ? 4 : width > 786 ? 3.5 : 1.25,
           gap: 15,
-          width: "95vw",
+          width: "100vw",
           pagination: false,
+          rewind: true,
         }}
         className="slides"
       >
