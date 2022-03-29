@@ -9,8 +9,8 @@ export interface IWork {
   title: string;
   image: string;
   tags: Array<string>;
-  github: string;
-  demo: string;
+  github?: string;
+  demo?: string;
 }
 
 export default function Works() {
@@ -64,8 +64,8 @@ function Slide({ title, image, tags, github, demo }: IWork) {
             </span>
           ))}
         </div>
-        <Button href={github}>Open in Github</Button>
-        <Button href={demo}>View Demo</Button>
+        {github && <Button href={github}>Open in Github</Button>}
+        {github && <Button href={demo}>View Demo</Button>}
       </div>
     </SplideSlide>
   );

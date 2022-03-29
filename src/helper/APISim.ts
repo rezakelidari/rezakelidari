@@ -32,10 +32,24 @@ export const skills: Array<ISkill> = [
 
 export const works: Array<IWork> = [
   {
+    title: "My Resume (This Project)",
+    image:
+      "https://user-images.githubusercontent.com/62962597/160688929-74bf8a8c-8cac-489e-869f-6a7d18bb6c72.png",
+    tags: ["React.js", "TypeScript", "Sass (.scss)", "Bootstrap Icons"],
+  },
+  {
     title: "Recipe App",
     image:
       "https://user-images.githubusercontent.com/62962597/159514383-e8026800-2fb6-41c0-bafe-93b363a2c215.png",
-    tags: ["React.js", "TypeScript", "Redux", "SPA", "Axios", "RestAPI"],
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Redux",
+      "React Icons",
+      "SPA",
+      "Axios",
+      "RestAPI",
+    ],
     github: "https://github.com/rezakelidari/recipe-app",
     demo: "https://recipe-app-kappa-lac.vercel.app/",
   },
@@ -81,7 +95,7 @@ export const works: Array<IWork> = [
     title: "Coin Rank",
     image:
       "https://user-images.githubusercontent.com/62962597/156441321-52bbde78-3bcd-4b62-a789-d38fd9a0642a.png",
-    tags: ["React.js", "React hooks", "Sass", "RestAPI"],
+    tags: ["React.js", "React hooks", "Sass", "RestAPI", "Axios"],
     github: "https://github.com/rezakelidari/coin-rank",
     demo: "https://coin-rank.vercel.app/",
   },
