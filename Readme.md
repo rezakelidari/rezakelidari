@@ -8,6 +8,7 @@
 
 ## My Skills 👊
  - React.js, jsx, hooks, Routing & SPA
+ - TypeScript
  - Redux, redux-thunk
  - Bootstrap v5, Bootstrap icons
  - Sass
