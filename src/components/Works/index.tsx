@@ -14,9 +14,6 @@ export interface IWork {
 }
 
 export default function Works() {
-  const width: number =
-    window.screenX > 0 ? window.screenX : window.screen.availWidth;
-
   return (
     <div className="worksMain main">
       <h2 className="mainHeader">Work Samples</h2>
@@ -25,9 +22,16 @@ export default function Works() {
         options={{
           focus: "center",
           trimSpace: false,
-          arrows: width < 786 ? false : true,
+          arrows: window.innerWidth < 786 ? false : true,
           autoplay: true,
-          perPage: width > 1280 ? 5 : width > 960 ? 4 : width > 786 ? 3 : 1.15,
+          perPage:
+            window.innerWidth > 1280
+              ? 5
+              : window.innerWidth > 960
+              ? 4
+              : window.innerWidth > 786
+              ? 3
+              : 1.15,
           perMove: 1,
           gap: 15,
           width: "100vw",

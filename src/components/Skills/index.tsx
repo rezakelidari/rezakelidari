@@ -12,9 +12,6 @@ export interface ISkill {
 }
 
 export default function Skills() {
-  const width: number =
-    window.screenX > 0 ? window.screenX : window.screen.availWidth;
-
   return (
     <div className="skillsMain main">
       <h2 className="mainHeader">Skills</h2>
@@ -22,10 +19,16 @@ export default function Skills() {
         options={{
           focus: "center",
           trimSpace: false,
-          arrows: width < 786 ? false : true,
+          arrows: window.innerWidth < 786 ? false : true,
           autoplay: true,
           perPage:
-            width > 1280 ? 5 : width > 960 ? 4 : width > 786 ? 3.5 : 1.25,
+            window.innerWidth > 1280
+              ? 5
+              : window.innerWidth > 960
+              ? 4
+              : window.innerWidth > 786
+              ? 3.5
+              : 1.25,
           gap: 15,
           width: "100vw",
           pagination: false,
